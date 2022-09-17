@@ -14,7 +14,7 @@ const myMiddleware = (req, res, next) => {
 app.use(myMiddleware);
 
 // Defining the port we’ll bind to.  
-const PORT =  3000;  
+const PORT =  5000;  
 
 // Defining a new endpoint behind the "/my-test-route" route. 
 app.get('/my-test-route', () => { 
