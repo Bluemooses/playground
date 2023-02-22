@@ -19,6 +19,7 @@ const PORT =  5000;
 // Defining a new endpoint behind the "/my-test-route" route. 
 app.get('/my-test-route', () => { 
     console.log('A GET Request was made to /my-test-route.');  
+    console.log('string', 'text')
 });  
 
 // Binding the server to port 3000. 
