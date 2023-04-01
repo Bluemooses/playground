@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
+import Home from '../../Pages/Home/Home'
+import About from '../../Pages/About/About'
+import Services from '../../Pages/Services/Services';
+import Contact from '../../Pages/Contact/Contact';
 
 function Navigation() {
   const navLinks = [
@@ -25,12 +25,12 @@ function Navigation() {
           ))}
         </ul>
       </nav>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/services" component={Services} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
     </Router>
   );
 }

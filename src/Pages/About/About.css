@@ -1,0 +1,46 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .about-heading {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .about-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .about-img {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .about-text {
+      max-width: none;
+      margin: 0;
+    }
+  }
+  
