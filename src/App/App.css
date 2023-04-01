@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  background-color: #4f2683;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a:hover {
+  color: #ffc62f;
+}
